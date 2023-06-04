@@ -1,0 +1,14 @@
+<div class="content">
+  <div class="box">
+    <h1>Itens adicionados:</h1>
+    <ul>
+      <h2 *ngFor="let item of cartService.items; let i = index">
+        {{ item.name }} - R$ {{ item.price }} 
+        
+        adicionar um models de pizza pra chamar o name
+        <button class="botao_lixeira" (click)="removeItem(i)"><img class="lixeira" src="/assets/imagens/trash.png" alt="trash"></button>
+      </h2>
+    </ul>
+    <h1>Total: R$ {{ cartService.totalPrice }}</h1>
+  </div>
+</div>

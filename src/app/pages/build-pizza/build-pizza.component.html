@@ -1,0 +1,89 @@
+<app-header></app-header>
+<h1 class="menu-title">
+    Here you can create an  "Outside the box" Pizza, wich means a Pizza with the dishes you like most! 
+</h1>
+
+
+<section class="build_pizza">
+    <select name="fatias" [(ngModel)]="selectedSlices">
+        <option disabled selected>Slices</option>
+        <option value=6>6 Slices - R$ 35,00</option>
+        <option value=8>8 Slices - R$ 45,00</option>
+    </select>
+    <select name="sabor_1" [(ngModel)]="selectedFlavour1">
+        <option disabled selected>Flavour 1</option>
+        <option value="1">Beets</option>
+        <option value="2">HotDog</option>
+        <option value="3">Brazilian</option>
+        <option value="4">Crackling</option>
+        <option value="5">Margherita</option>
+        <option value="6">Pepperoni</option>
+        <option value="7">Tuna</option>
+        <option value="8">Shrooms</option>
+        <option value="9">Pasta</option>
+        <option value="10">Sushi</option>
+        <option value="11">Burger</option>
+    </select>
+    <select name="sabor_2" [(ngModel)]="selectedFlavour2">
+        <option disabled selected>Flavour 2</option>
+        <option value="1">Beets</option>
+        <option value="2">HotDog</option>
+        <option value="3">Brazilian</option>
+        <option value="4">Crackling</option>
+        <option value="5">Margherita</option>
+        <option value="6">Pepperoni</option>
+        <option value="7">Tuna</option>
+        <option value="8">Shrooms</option>
+        <option value="9">Pasta</option>
+        <option value="10">Sushi</option>
+        <option value="11">Burger</option>
+    </select>
+    <select name="borda" [(ngModel)]="selectedBorda">
+        <option disabled selected>Filled Edge (Optional) (+ R$5,00)</option>
+        <option value="1">Cheddar</option>
+        <option value="2">Catupiry</option>
+        <option value="3">Cream Cheese</option>
+    </select>
+    <app-build-pizza-add>
+      [selectedSlices]="selectedSlices"
+      [selectedFlavour1]="selectedFlavour1"
+      [selectedFlavour2]="selectedFlavour2"
+      [selectedBorda]="selectedBorda"
+    </app-build-pizza-add>
+</section>
+
+
+<h1>We have some suggestions:</h1>
+<section class="menu-create">    
+        <div class="menu-create-pizza">
+            <img src="assets/imagens/pasta.png">
+            <h3>Pasta Pizza</h3>
+            <p>Pasta, Cheese, Special tomato sauce</p>
+            <p> R$45,00</p>
+            <app-carrinho [item]="{ name: 'Pasta Pizza', price: 45 }"></app-carrinho>
+        </div>
+
+        <div class="menu-create-pizza">
+            <img src="assets/imagens/hotroll.png">
+            <h3>Sushi Pizza</h3>
+            <p>Japanease rice, Cucumber, Sauce,CreamCheese, Salmon</p>
+            <p> R$45,00</p>
+            <app-carrinho [item]="{ name: 'Sushi Pizza', price: 45 }"></app-carrinho>
+        </div>
+
+        <div class="menu-create-pizza">
+            <img src="assets/imagens/burger.png">
+            <h3>Pizza Burger (Chief suggestion)</h3>
+            <p>Hamburger, Cheese, Tomatoes and Sauce</p>
+            <p> R$50,00</p>
+            <app-carrinho [item]="{ name: 'Pizza Burger', price: 50 }"></app-carrinho>
+        </div>
+</section>
+
+<h2 class="subtitle">Be brave, Be creative, Be Outside the box!</h2>
+
+<h3 class="menu-title">
+    Remember: The look doesn't matter if the flavour is delicious! 
+</h3>
+<app-footer></app-footer>
+

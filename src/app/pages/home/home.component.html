@@ -1,0 +1,42 @@
+<app-header></app-header>
+<div class="container">
+  <div class="banner">
+    <h1>Outside The Box Pizzeria</h1>
+    <img class="gif_pizza" src="assets/imagens/pizza_gif1.gif" alt="Imagem 1">
+  </div>
+  <div class="content__item1">
+    <div class="item">
+      <img src="assets/imagens/pizza_ico.png" alt="margherita">
+      <h3>VIEW OUR MENU</h3>
+      <a [routerLink]="['/menu']"><app-button>MORE INFO</app-button></a>
+    </div>
+    <div class="item">
+      <img src="assets/imagens/motoboy.png" alt="vegan">
+      <h3>DELIVERY OR PICKUP</h3>
+      <a [routerLink]="['/delivery']"><app-button>MORE INFO</app-button></a>
+    </div>
+    <div class="item">
+      <img src="assets/imagens/location_pin.png" alt="cogumelo">
+      <h3>OUR LOCATIONS</h3>
+      <a [routerLink]="['/locations']"><app-button>MORE INFO</app-button></a>
+    </div>
+  </div>
+  <div class="content__item2">
+    <h1 class="title_specials">Our Specials</h1>
+    <div class="content__item2__img">
+      <div>
+        <img src="assets/imagens/mushroom.png" alt="margherita">
+        <h3>Shroom's Pizza</h3>
+      </div>
+      <div>
+        <img src="assets/imagens/veg.png" alt="vegan">
+        <h3>Beet's Pizza</h3>
+      </div>
+      <div>
+        <img src="assets/imagens/hotdog.png" alt="cogumelo">
+        <h3>Hot Dog's Pizza</h3>
+      </div>
+    </div>
+  </div>  
+</div>
+<app-footer></app-footer>

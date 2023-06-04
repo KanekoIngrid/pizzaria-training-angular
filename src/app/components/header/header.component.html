@@ -1,0 +1,21 @@
+<header>
+    <div class="logo">
+        <a [routerLink]="['/']">
+            <img src="assets/imagens/logopizza.png" alt="logopizza">
+        </a>
+    </div>
+    <nav class="navegation">
+        <a class="navigation__item" [routerLink]="['/menu']">
+            <h1>MENU</h1>
+        </a>
+        <a class="navigation__item" [routerLink]="['/build-pizza']">
+            <h1>CREATE PIZZA</h1>
+        </a>
+        <button class="toggle-btn" (click)="toggleCarrinhoGlobal()">
+            <img src="\assets\imagens\cart.png">
+        </button>
+    </nav>
+    <div class="carrinho-global" [ngClass]="{ 'hidden': !isCarrinhoGlobalVisible }">
+        <app-carrinho-global></app-carrinho-global>
+    </div>
+</header>

@@ -1,0 +1,30 @@
+
+.menu-title{
+    margin-top: 8%;
+    text-align: center;
+    font-family: 'PanPizza';
+    font-size: 50px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5%;
+    margin: 10%;
+    margin-top: 3%;
+  }
+  
+.menu-pizza {
+  text-align: center;
+}
+
+.menu-pizza img {
+  width: 80%;
+  height: 225px;
+  object-fit: cover;
+  border-radius: 2%;
+}
+
+.menu-pizza h3 {
+  margin-top: 10%;
+}

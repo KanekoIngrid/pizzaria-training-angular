@@ -1,0 +1,61 @@
+.menu-title{
+    margin-top: 8%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.menu-create {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5%;
+    margin:15%;
+    margin-top: 3%;
+  }
+  
+.menu-create-pizza {
+  text-align: center;
+}
+
+.menu-create-pizza img {
+  width: 80%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 2%;
+}
+
+h2{
+    font-family: 'PanPizza';
+    font-size: 50px;
+    display: flex;
+   justify-content: center;
+   top: -10px;
+}
+
+.build_pizza {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+
+  select {
+    width: 10%;
+    margin-top: 1%;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+
+
+  option {
+    text-align: center;
+  }
+  
+  h1{
+    font-family: 'PanPizza';
+    font-size: 50px;
+    display: flex;
+   justify-content: center;
+   top: -10px;
+  }
